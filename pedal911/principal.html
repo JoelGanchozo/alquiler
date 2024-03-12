@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CelebraEspacios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/fondo1.png');
+            transition: background-color 0.5s ease;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+        nav {
+            text-align: center;
+            background-color: #4CAF50;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        nav .more-options {
+            position: relative;
+            display: inline-block;
+        }
+        nav .more-options-content {
+            display: none;
+            position: absolute;
+            background-color: #4CAF50;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            text-align: left;
+        }
+        nav .more-options:hover .more-options-content {
+            display: block;
+        }
+        nav a:nth-last-child(1),
+        nav a:nth-last-child(2) {
+            margin-left: auto; /* Alinea a la derecha */
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            flex-wrap: wrap;
+            transition: margin 0.5s ease;
+        }
+        section {
+            background-color: #f2f2f2;
+            flex-basis: calc(30% - 20px);
+            margin-bottom: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            transition: background-color 0.5s ease, transform 0.5s ease;
+        }
+        section:hover {
+            background-color: #e0e0e0;
+            transform: scale(1.05);
+        }
+        h2 {
+            margin-top: 0;
+            color: #333;
+            transition: color 0.5s ease;
+        }
+        h1 {
+            color: rgb(255, 255, 255); /* Color del texto blanco */
+            font-size: 60px; /* Ajustado el tamaño de la fuente del título */
+            margin-top: 0px; /* Ajustado el margen superior del título */
+            margin-bottom: 0px; /* Aumentado el margen inferior del título */
+        }
+        
+        
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: transform 0.5s ease;
+        }
+        section:hover img {
+            transform: scale(1.1);
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            display: block;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        section:last-child {
+            flex-basis: 100%;
+        }
+        nav {
+            text-align: left; /* Alinea a la izquierda */
+            background-color: #4CAF50;
+            padding: 10px;
+        }
+        .reseñas {
+            margin-top: 30px;
+            flex-basis: 100%; /* Hace que la sección de reseñas ocupe el 100% del ancho */
+        }
+        .photos {
+            margin-top: 10px;
+            flex-basis: 100%; /* Hace que la sección de reseñas ocupe el 100% del ancho */
+        }
+        .information {
+            margin-top: 10px;
+            flex-basis: 100%; /* Hace que la sección de reseñas ocupe el 100% del ancho */
+        }
+        .more-options {
+    position: relative;
+    display: inline-block;
+}
+.more-options {
+    position: relative;
+    display: inline-block;
+}
+
+.more-options-toggle {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.more-options-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 8px;
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.more-options-content a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 6px 10px;
+}
+
+.more-options-content a:hover {
+    background-color: #f0f0f0;
+}
+
+.more-options:hover .more-options-content {
+    display: block;
+}
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>CelebraEspacios</h1>
+    </header>
+    <nav>
+        <a href="#reseñas">Reseñas</a>
+        <a href="#photos">Fotos</a>
+        <a href="#information">Información</a>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<div class="more-options">
+    <a href="#" class="more-options-toggle"><i class="fas fa-bars"></i></a>
+    <div class="more-options-content">
+        <a href="login.html"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a>
+        <a href="index.php"><i class="fas fa-user-plus"></i> Registrarse</a>
+    </div>
+</div>
+
+
+    </nav>
+    <main>
+        <!-- Secciones de paquetes (Package 1, Package 2, Package 3) aquí -->
+
+        <section>
+            <h2>Rancho Coyoacan</h2>
+            <img src="images/Coyoacan.jpeg" alt="Package 1">
+            <p>Reserva por hora: $50</p>
+            <p>Salon: Eventos festivos, no aplica cumpleaños</p>
+            <p>Referencias: 
+                <br><p>Brayan Hernández<br>(+593) 549763197</p>
+                
+            </p>
+            <p>Location: Guayabamba</p>
+            <p>Menu:</p>
+            <ul>
+                <li>Appetizer: Bruschetta</li>
+                <li>Entree: Grilled Chicken</li>
+                <li>Dessert: Tiramisu</li>
+            </ul>
+            <button>Reserve</button>
+        </section>
+        <section>
+            <h2>Package 2</h2>
+            <img src="package2.jpg" alt="Package 2">
+            <p>Price: $200</p>
+            <p>Room: Garden Room</p>
+            <p>References: John Doe, Jane Smith</p>
+            <p>Location: Beachfront</p>
+            <p>Menu:</p>
+            <ul>
+                <li>Appetizer: Shrimp Cocktail</li>
+                <li>Entree: Steak Dinner</li>
+                <li>Dessert: Cheesecake</li>
+            </ul>
+            <button>Reserve</button>
+        </section>
+        <section>
+            <h2>Package 3</h2>
+            <img src="package3.jpg" alt="Package 3">
+            <p>Price: $300</p>
+            <p>Room: Sky Lounge</p>
+            <p>References: John Doe, Jane Smith</p>
+            <p>Location: City Center</p>
+            <p>Menu:</p>
+            <ul>
+                <li>Appetizer: Caprese Salad</li>
+                <li>Entree: Lobster Tail</li>
+                <li>Dessert: Chocolate Mousse</li>
+            </ul>
+            <button>Reserve</button>
+        </section>
+
+        <section class="photos" id="photos">
+            <h2>Photo Gallery</h2>
+            <p>Explore our beautiful venue through these photos.</p>
+            <!-- Agrega aquí tus fotos o un carrusel de fotos si lo prefieres -->
+        </section>
+
+        <section class="information" id="information">
+            <h2>Information</h2>
+            <p><strong>Salon:</strong> Rancho Coyoacan</p>
+            <p><strong>Informacion:</strong> Salón De Eventos En Coyoacan ofrecemos servicios para XV años, Bodas, Primeras Comuniones y Eventos Empresariales, contamos con una gran variedad de paquetes a tu disposición busca tu fecha disponible para realizar tu evento donde tendrás el servicio que te mereces en este momento más importante de tu vida. Nuestro salón de eventos en Coyoacán se adapta a tus necesidades y puede estar seguro de que tu evento será mágico e inolvidable. </p>
+            <p><strong>Infraestructura:</strong></p>
+            <!-- Agrega el iframe con el enlace de Google Maps -->
+            <iframe
+                width="80%"
+                height="500"
+                frameborder="0"
+                style="border:0"
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1706499200020!6m8!1m7!1sCAoSLEFGMVFpcFA3SGpRS1dZOExIUXJDWmprdUpPLS1GNEtyNkRWUkpDNlB1cEVN!2m2!1d19.3226324!2d-99.1598184!3f180!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    
+        <section class="reseñas" id="reseñas">
+            <h2>Reviews</h2>
+            <p>"This package was amazing! I would highly recommend it." - John Doe</p>
+            <p>"I had a great experience with this package. The service was excellent." - Jane Smith</p>
+        </section>
+       
+    </main>
+</body>
+</html>
